@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ContactsSMS</string>
+    <string name="options_button">Help</string>
+    <string name="refresh_button">Refresh Messages</string>
+    <string name="clear_messages_button">Clear Messages</string>
+    <string name="signature_disable">Use Signature</string>
+    <string name="dummy_content">GearSMS</string>
+    <string name="ConnectionEstablishedMsg">Connection established with RemotePeer</string>
+    <string name="help_view_name">ContactsSMS Help</string> 
+    <string name="main_help_header">Sending SMS</string>
+    <string name="help_header_by_number">BEGIN WITH PHONE NUMBER</string>
+    <string name="help_header_by_message">BEGIN WITH MESSAGE</string>
+    <string name="help_header_by_contact">BEGIN WITH CONTACT</string>
+    <string name="help_header_refresh">INCOMING MESSAGES</string>
+    <string name="help_header_modes">BUTTON FUNCTIONS</string>
+    <string name="signature_input_heading">Signature</string>
+    <string name="signature_hint">Change custom signature</string>
+    <string name="default_signature"> Sent from my Gear2.</string>
+    
+    <string name="help_number_block">1. Press "NUMBER" on the main screen and 
+	enter the number. Spaces are OK.\n\n
+    2. Long press the right arrow to type message.\n\n
+	3. Long press the right arrow to confirm and send.\n\n\n</string>
+    
+    
+    <string name="help_message_block">1. Press "MESSAGE" on the main screen.\n\n
+    2. After typing message, long press right arrow to send 
+    to a contact.\n\n NOTE: When sending to  
+    non-contacts start from "NUMBER".\n\n\n</string>
+    
+    <string name="help_contacts_block">1. Press "CONTACTS" on the main screen.\n\n
+        2. Choose a Contact and begin typing message.\n\n
+        3. Long press the right arrow to confirm and send message.
+        
+        </string>
+        
+    
+    
+    <string name="help_refresh_messages_block">
+        A service runs in the background that will keep track of
+	  incoming sms messages. You can choose to refresh or clear
+      the remote device\'s messages by pressing the 
+      "REFRESH MESSAGES" and "CLEAR MESSAGES" button\'s at any time.\n\n
+      When a new sms is received , An "InBox" item will appear in the main list.\n\n
+      You can reply to messages in the same manner as newly created ones.\n\n\n</string>
+    
+<!--     <string name="help_view_instructions">1. To send an SMS by phone number, \n -->
+<!-- 	Simply press "NUMBER" on the main screen and  -->
+<!-- 	enter the number. Spaces are ok.\n -->
+<!--     Afterwards, long press the right arrow to type message.\n\n\n -->
+
+
+<!-- 2. To start with the message itself, press "MESSAGE" on the main screen.\n -->
+<!--     After typing message you will only be able to send it  -->
+<!--     to a contact.\n\n When sending to   -->
+<!--     non-contacts start from "NUMBER".\n\n\n -->
+
+
+<!-- 3. A service runs in the background that will keep track of -->
+<!-- 	  incoming sms messages. You can choose to refresh -->
+<!--       the remote devices messages by pressing the  -->
+<!--       "REFRESH MESSAGES" button at any time.\n\n\n</string> -->
+    <string name="disclaimer">This app uses your Android\'s Default SMS Delivery mechanism to send SMS messages.
+If you believe for any reason that this app fails to deliver messages, please
+verify that you can send a message using the android device directly, using the exact same number that failed using this app.</string>
+
+</resources>

@@ -1,0 +1,195 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context="com.halimede.contactssms.GSMSSmartView" >
+
+    <!--
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    -->
+
+    
+    <!--
+         This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows.
+    -->
+ 
+ <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          >
+
+	<RelativeLayout
+	    android:id="@+id/quick_help_scroll"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="fill"
+	     
+	    android:orientation="horizontal"
+	     >
+	     <TextView
+	         android:id="@+id/info_display"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	        android:textColor="#787878"
+	         android:layout_above="@+id/quick_help"
+	         android:layout_marginTop="50dp"
+	         android:text="@string/disclaimer" />
+
+	    <ImageView
+	        android:id="@+id/quick_help"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="-50dp"
+	        android:layout_marginBottom="200dp"
+	        android:layout_weight="1"
+	        android:contentDescription="image"
+	        android:src="@drawable/image2" />
+	    
+	    <TextView
+	         
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	        android:visibility="invisible"
+	         android:layout_below="@+id/extra_space"
+	         android:layout_marginTop="54dp"
+	         android:text="@string/disclaimer" />
+
+<!-- 	    <Space -->
+<!-- 	        android:layout_width="wrap_content" -->
+<!-- 	        android:layout_height="200dp" -->
+<!-- 	        android:layout_alignParentBottom="true" -->
+	        
+<!-- 	        android:layout_marginBottom="150dp" -->
+<!-- 	        /> -->
+
+	</RelativeLayout>
+       
+    </ScrollView>
+
+     
+
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="@string/dummy_content"
+        android:textAlignment="center"
+        
+        android:layout_marginTop="200dp"
+        android:textColor="#cccccc"
+        android:textSize="40dp"
+        android:shadowDx="14"
+        android:shadowDy="14"
+        android:shadowRadius="8"
+        android:shadowColor="#000000"
+         android:visibility="gone" 
+        android:textStyle="bold"
+        />
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="false" 
+        android:layout_marginBottom="0sp"
+        android:background="#E1E1E1"
+        android:layout_gravity="bottom"
+        
+        
+        >
+       
+        
+      
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="#787878"
+            android:orientation="vertical"
+            tools:ignore="UselessParent" >
+            
+            <TextView 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4sp"
+                
+                android:padding="4sp"
+                android:labelFor="@+id/customSignature"
+                android:background="#969696"
+                android:textAlignment="center"
+                android:shadowDx="6"
+                android:shadowRadius="8"
+                
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:text="@string/signature_input_heading"
+                />
+            <EditText 
+                android:id="@+id/customSignature"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/default_signature"
+                android:hint="@string/signature_hint"
+                
+                
+                />
+            <CheckBox
+                android:id="@+id/use_sig"
+                android:checked="true"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#CCCCCC"
+                android:text="@string/signature_disable" />
+            
+            <Button
+                android:id="@+id/refresh_messages"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#CCCCCC"
+                android:visibility="gone"
+                android:text="@string/refresh_button" />
+            
+            <Button
+                android:id="@+id/clear_messages"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#CCCCCC"
+                android:visibility="gone"
+                android:text="@string/clear_messages_button" />
+            
+
+            <Button
+                android:id="@+id/option_button_1"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#CCCCCC"
+                android:layout_margin="8sp"
+                android:background="#3C3C3C"
+                android:visibility="gone"
+                android:text="@string/options_button" />
+        </LinearLayout>
+    </FrameLayout>
+
+   
+
+</FrameLayout>

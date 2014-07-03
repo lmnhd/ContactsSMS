@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+   
+    
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="6dip"
+    
+     >
+    
+       <com.halimede.contactssms.HelpScrollView
+         android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       
+        
+        
+        >
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="1dip"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:layout_marginTop="5sp"
+                android:labelFor="@+id/help_modes"
+                android:shadowColor="@color/black_overlay"
+                android:background="#cccccc"
+                android:shadowDx="6"
+                android:shadowRadius="8"
+                android:text="@string/help_header_modes"
+                android:textAppearance="?android:attr/textAppearanceSmallInverse"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+            <ImageView
+                android:layout_marginTop="15sp"
+                android:id="@+id/help_modes"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                
+                android:contentDescription="image"
+                
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:layout_marginTop="5sp"
+                android:labelFor="@+id/imageView1"
+                android:shadowColor="@color/black_overlay"
+                android:background="#cccccc"
+                android:shadowDx="6"
+                android:shadowRadius="8"
+                android:text="@string/help_header_by_contact"
+                android:textAppearance="?android:attr/textAppearanceSmallInverse"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+    
+         <TextView
+             
+                android:layout_marginTop="25sp"
+                android:layout_marginBottom="15sp"
+                android:id="@+id/imageView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:text="@string/help_contacts_block"
+                
+               
+               
+                
+                
+                />
+         
+         <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:layout_marginTop="5sp"
+                android:labelFor="@+id/numberBlock"
+                android:shadowColor="@color/black_overlay"
+                android:background="#cccccc"
+                android:shadowDx="6"
+                android:shadowRadius="8"
+                android:text="@string/help_header_by_number"
+                android:textAppearance="?android:attr/textAppearanceSmallInverse"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+    
+         <TextView
+             
+                android:layout_marginTop="25sp"
+                android:layout_marginBottom="15sp"
+                android:id="@+id/numberBlock"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:text="@string/help_number_block"
+                
+               
+               
+                
+                
+                />
+         
+         <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:layout_marginTop="5sp"
+                android:labelFor="@+id/messageBlock"
+                android:shadowColor="@color/black_overlay"
+                android:background="#cccccc"
+                android:shadowDx="6"
+                android:shadowRadius="8"
+                android:text="@string/help_header_by_message"
+                android:textAppearance="?android:attr/textAppearanceSmallInverse"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+    
+         <TextView
+             
+                android:layout_marginTop="25sp"
+                android:layout_marginBottom="15sp"
+                android:id="@+id/messageBlock"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:text="@string/help_message_block"
+                
+               
+               
+                
+                
+                />
+         
+          <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5sp"
+                android:layout_marginTop="5sp"
+                android:labelFor="@+id/refreshBlock"
+                android:shadowColor="@color/black_overlay"
+                android:background="#cccccc"
+                android:shadowDx="6"
+                android:shadowRadius="8"
+                android:text="@string/help_header_refresh"
+                android:textAppearance="?android:attr/textAppearanceSmallInverse"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+    
+         <TextView
+             
+                android:layout_marginTop="25sp"
+                android:layout_marginBottom="15sp"
+                android:id="@+id/refreshBlock"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:text="@string/help_refresh_messages_block"
+                
+               
+               
+                
+                
+                />
+          
+
+         <Space
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+            
+        </LinearLayout>
+        
+         </com.halimede.contactssms.HelpScrollView>
+<!--           <ImageView -->
+<!--                 android:layout_marginTop="1sp" -->
+<!--                 android:id="@+id/imageView2" -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="fill_parent" -->
+                
+<!--                 android:contentDescription="image" -->
+                
+<!--                 /> -->
+<!--            <ImageView -->
+<!--                 android:layout_marginTop="1sp" -->
+<!--                 android:id="@+id/imageView3" -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="fill_parent" -->
+                
+<!--                 android:contentDescription="image" -->
+                
+<!--                 /> -->
+<!--             <ImageView -->
+<!--                 android:layout_marginTop="1sp" -->
+<!--                 android:id="@+id/imageView4" -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="fill_parent" -->
+                
+<!--                 android:contentDescription="image" -->
+                
+<!--                 /> -->
+<!--              <ImageView -->
+<!--                 android:layout_marginTop="1sp" -->
+<!--                 android:id="@+id/imageView5" -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="fill_parent" -->
+                
+<!--                 android:contentDescription="image" -->
+                
+<!--                 /> -->
+<!--               <ImageView -->
+<!--                 android:layout_marginTop="1sp" -->
+<!--                 android:id="@+id/imageView6" -->
+<!--                 android:layout_width="fill_parent" -->
+<!--                 android:layout_height="fill_parent" -->
+                
+<!--                 android:contentDescription="image" -->
+                
+<!--                 /> -->
+        
+        
+        
+        
+        
+        
+        
+        
+
+</ViewFlipper>
+</LinearLayout>
+
